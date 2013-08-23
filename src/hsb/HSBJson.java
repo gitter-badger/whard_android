@@ -17,6 +17,8 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.util.Log;
+import android.widget.Toast;
+
 
 public class HSBJson 
 {
@@ -25,7 +27,8 @@ public class HSBJson
     static JSONObject jObj = null;
     static String json = "";
 	
-	public void SetActivity(Activity _activity)
+
+	public void setActivity(Activity _activity)
 	{
 		mActivity = _activity;
 	}
@@ -61,6 +64,28 @@ public class HSBJson
 		    }
 		} catch (JSONException e) {
 		    e.printStackTrace();
+		}
+	public void SetActivity(Activity _activity) { mActivity = _activity; }
+    public void JsonParse(String json)
+    {        
+		String resultStr = "";
+
+		try 
+		{
+			JSONArray jArr = new JSONArray(json);
+
+			for (int i = 0; i < jArr.length(); i++) 
+			{
+				JSONObject jObj = jArr.getJSONObject(i);
+				resultStr += String.format("아이디 : %s   전화번호 : %s\n",
+						jObj.getString("id"), jObj.getString("tel"));
+			}
+			
+			//result.setText(resultStr);
+		} 
+		catch (JSONException e) 
+		{
+			Toast.makeText(mActivity, e.getMessage(), Toast.LENGTH_SHORT).show();
 		}
 	}
 	
