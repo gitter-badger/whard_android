@@ -39,7 +39,7 @@ public class HSBJson
 						jObj.getString("id"), jObj.getString("tel"));
 			}
 			
-			result.setText(resultStr);
+			//result.setText(resultStr);
 		} 
 		catch (JSONException e) 
 		{
