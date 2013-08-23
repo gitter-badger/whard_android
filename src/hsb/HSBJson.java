@@ -22,17 +22,13 @@ import android.widget.Toast;
 
 public class HSBJson 
 {
-	Activity mActivity = null;
 	static InputStream is = null;
     static JSONObject jObj = null;
     static String json = "";
-	
+    private static Activity mActivity = null;
 
-	public void setActivity(Activity _activity)
-	{
-		mActivity = _activity;
-	}
-	
+    public static void SetActivity(Activity _activity) { mActivity = _activity; }
+
 	public static void parsingJSONToData(String url)
 	{
 		JSONArray contacts = null;
@@ -65,8 +61,9 @@ public class HSBJson
 		} catch (JSONException e) {
 		    e.printStackTrace();
 		}
-	public void SetActivity(Activity _activity) { mActivity = _activity; }
-    public void JsonParse(String json)
+	}
+	
+    public static void JsonParse(String json)
     {        
 		String resultStr = "";
 
@@ -85,7 +82,7 @@ public class HSBJson
 		} 
 		catch (JSONException e) 
 		{
-			Toast.makeText(mActivity, e.getMessage(), Toast.LENGTH_SHORT).show();
+			//Toast.makeText(mActivity, e.getMessage(), Toast.LENGTH_SHORT).show();
 		}
 	}
 	
