@@ -4,5 +4,14 @@
     <string name="app_name">Nino</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_ninomain">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_nino_mai">NinoMai</string>
+    <string name="title_activity_nino__main">Nino_Main</string>
+    <string name="title_activity_nino__list">Nino_List</string>
+    <string name="title_activity_nino__message">Nino_Message</string>
+    <string name="title_activity_nino__location">Nino_Location</string>
+    <string name="title_activity_nino__setting">Nino_Setting</string>
 
 </resources>
