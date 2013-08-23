@@ -24,6 +24,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.nino.Nino_main" >
+        </activity>
+        <activity
+            android:name="com.example.nino.NinomainActivity"
+            android:label="@string/title_activity_ninomain" >
+        </activity>
+        <activity
+            android:name="com.example.nino.NinoMai"
+            android:label="@string/title_activity_nino_mai" >
+        </activity>
+        <activity
+            android:name="com.example.nino.Nino_Main"
+            android:label="@string/title_activity_nino__main" >
+        </activity>
+        <activity
+            android:name="com.example.nino.Nino_Setting"
+            android:label="@string/title_activity_nino__setting" >
+        </activity>
     </application>
 
 </manifest>
